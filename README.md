@@ -14,4 +14,7 @@ The user opens a blank page, redirects it to the login page. After successful au
 `npm install`
 
 ### Start 
+
+Change config file. path: `./config/index.js`
+
 `npm run start`

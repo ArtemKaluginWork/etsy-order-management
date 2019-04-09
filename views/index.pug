@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 User Info
+  p User ID: #{id}
+  p Email: #{email}
+  h1 Сhoose one of your stores
+  form(method='GET' action='/orders')
+    select(name='shopId')
+      each shop in shops
+        option(value=shop.shop_id) #{shop.shop_name}
+    button(type='submit') Get info
